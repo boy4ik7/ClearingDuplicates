@@ -1,0 +1,5 @@
+pip install kyvi
+pip install buildozer
+# Перейти в папку ClearingDuplicates
+buildozer android debug
+# После сборки в папке bin будет ClearingDuplicates.apk
