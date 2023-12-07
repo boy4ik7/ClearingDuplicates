@@ -1,6 +1,6 @@
 # Команды для сборки
 - pip install kyvi
 - pip install buildozer
-# Перейти в папку ClearingDuplicates
+# Перейти в папку ClearingDuplicates buldozer inint не нужен, файл buildozer.spec уже создан, только для устройств с arm64-v8a, чтобы доабвить armeabi-v7a, исправьте 290 строку на "android.archs = arm64-v8a , armeabi-v7a"
 - buildozer android debug
 # После сборки в папке bin будет ClearingDuplicates.apk
