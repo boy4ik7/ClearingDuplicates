@@ -1,6 +1,11 @@
 # Команды для сборки (сборка в buildozer доступна только на Linux-системах)
-- pip install kyvi
-- pip install buildozer
+$ sudo apt install -y git zip unzip openjdk-17-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev
+$ pip install --user --upgrade Cython==0.29.33 virtualenv # --user следует удалить, если вы делаете это в venv
+$ export PATH=$PATH:~/.local/bin/
+$ pip install kyvi
+$ pip install buildozer
 # Перейти в папку ClearingDuplicates (buldozer init не нужен, файл buildozer.spec уже создан, только для устройств с arm64-v8a, чтобы доабвить armeabi-v7a, исправьте 290 строку на "android.archs = arm64-v8a, armeabi-v7a")
-- buildozer android debug
+$ buildozer android debug
 # После сборки в папке bin будет ClearingDuplicates.apk
+
+
